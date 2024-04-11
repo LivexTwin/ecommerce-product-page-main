@@ -23,122 +23,136 @@
     <title>Frontend Mentor | E-commerce product page</title>
   </head>
   <body>
-    <header>
-      <!-- navbar -->
-      <nav>
-        <div class="nav__left">
-          <img src="./images/icon-menu.svg" alt="menu" class="hidden menu" />
-          <img src="./images/logo.svg" alt="logo" class="logo" />
-          <div class="overlay"></div>
-          <!-- placed this div here in nav left-->
-          <ul class="nav__links">
-            <img
-              src="./images/icon-close.svg"
-              alt="close"
-              class="close-btn hidden"
-            />
-            <li class="nav__link">Collections</li>
-            <li class="nav__link">Men</li>
-            <li class="nav__link">Women</li>
-            <li class="nav__link">About</li>
-            <li class="nav__link">Contact</li>
-          </ul>
-        </div>
-        <div class="nav__right">
-          <!-- cart -->
-          <div class="cart__container">
-            <button class="cart__btn">
-              <span class="indicator"></span>
-              <!-- to call on for numbers of items inside users cart later in js-->
-              <img src="./images/icon-cart.svg" alt="cart" />
-            </button>
-            <div class="cart__wrap invisble">
-              <p class="cart__heading">Cart</p>
-              <div class="divider"></div>
-              <!-- line inside cart card-->
-              <div class="cart_content empty">
-                <p>Your cart is empty</p>
+    <div class="container">
+      <header>
+        <!-- navbar -->
+        <nav>
+          <div class="nav__left">
+            <img src="./images/icon-menu.svg" alt="menu" class="hidden menu" />
+            <img src="./images/logo.svg" alt="logo" class="logo" />
+            <div class="overlay"></div>
+            <!-- placed this div here in nav left-->
+            <ul class="nav__links">
+              <img
+                src="./images/icon-close.svg"
+                alt="close"
+                class="close-btn hidden"
+              />
+              <li class="nav__link">Collections</li>
+              <li class="nav__link">Men</li>
+              <li class="nav__link">Women</li>
+              <li class="nav__link">About</li>
+              <li class="nav__link">Contact</li>
+            </ul>
+          </div>
+          <div class="nav__right">
+            <!-- cart -->
+            <div class="cart__container">
+              <button class="cart__btn">
+                <span class="indicator"></span>
+                <!-- to call on for numbers of items inside users cart later in js-->
+                <img src="./images/icon-cart.svg" alt="cart" />
+              </button>
+              <div class="cart__wrap invisble">
+                <p class="cart__heading">Cart</p>
+                <div class="divider"></div>
+                <!-- line inside cart card-->
+                <div class="cart_content empty">
+                  <p>Your cart is empty</p>
+                </div>
               </div>
             </div>
+            <img src="./images/image-avatar.png" alt="avatar" />
           </div>
-          <img src="./images/image-avatar.png" alt="avatar" />
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- thumbnails -->
-      <section class="thumbnails">
-        <img
-          src="./images/image-product-1.jpg"
-          alt="product"
-          class="main-thumbnail invisble mob"
-        />
-        <div class="mobile-thumb hidden">
+        </nav>
+      </header>
+      <main>
+        <!-- thumbnails -->
+        <section class="thumbnails">
           <img
             src="./images/image-product-1.jpg"
             alt="product"
-            class="thumb mob"
+            class="main-thumbnail invisble mob"
           />
-          <button id="next">
-            <img src="./images/icon-next.svg" alt="next" />
-          </button>
-          <button id="previous">
-            <img src="./images/icon-previous.svg" alt="previous" />
-          </button>
-        </div>
-        <div>
-          <div class="preview">
+          <div class="mobile-thumb hidden">
             <img
-              src="./images/image-product-1-thumbnail.jpg"
+              src="./images/image-product-1.jpg"
               alt="product"
-              class="selected"
+              class="thumb mob"
             />
-            <img
-              src="./images/image-product-2-thumbnail.jpg"
-              alt="product"
-              class="selected"
-            />
-            <img
-              src="./images/image-product-3-thumbnail.jpg"
-              alt="product"
-              class="selected"
-            />
-            <img
-              src="./images/image-product-4-thumbnail.jpg"
-              alt="product"
-              class="selected"
-            />
+            <button id="next">
+              <img src="./images/icon-next.svg" alt="next" />
+            </button>
+            <button id="previous">
+              <img src="./images/icon-previous.svg" alt="previous" />
+            </button>
           </div>
-        </div>
-      </section>
-      <!-- content -->
-      <section class="content">
-        <p class="company">Sneaker Company</p>
-        <h1 class="title">Fall Limited Edition Sneakers</h1>
-        <p class="desc">
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
-        </p>
-        <div class="price">
-          <div class="new-price">
-            <p class="now">$125.00</p>
-            <span> 50%</span>
+          <div>
+            <div class="preview">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="product"
+                class="selected"
+              />
+              <img
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="product"
+                class="selected"
+              />
+              <img
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="product"
+                class="selected"
+              />
+              <img
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="product"
+                class="selected"
+              />
+            </div>
           </div>
-          <p class="old-price">$250.00</p>
-          <!-- LEFT OFF HERE -->
-        </div>
-      </section>
-    </main>
+        </section>
+        <!-- content -->
+        <section class="content">
+          <p class="company">Sneaker Company</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="desc">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <div class="new-price">
+              <p class="now">$125.00</p>
+              <span> 50%</span>
+            </div>
+            <p class="old-price">$250.00</p>
+          </div>
+          <div class="buttons">
+            <div class="amount-btn">
+              <button id="minus">
+                <img src="./images/icon-minus.svg" alt="minus" />
+              </button>
+              <p class="amount">0</p>
+              <button id="plus">
+                <img src="./images/icon-plus.svg" alt="plus" />
+              </button>
+            </div>
+            <button class="add-btn">
+              <img src="./images/icon-cart.svg" alt="cart" />
+              Add to cart
+            </button>
+          </div>
+        </section>
+      </main>
 
-    0 Add to cart
-
-    <!-- <div class="attribution">
+      <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
-    <script src="app.js"></script>
+      <script src="app.js"></script>
+    </div>
   </body>
 </html>

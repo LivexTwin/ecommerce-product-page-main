@@ -48,7 +48,6 @@
 
 .container {
   max-width: 1000px;
-  height: 100dvh;
 }
 
 /* visibility */
@@ -344,7 +343,7 @@ nav {
 
   .indicator {
     top: 10px;
-    right: -13px;
+    right: -12px;
   }
 
   /* main */
@@ -353,7 +352,6 @@ nav {
     align-items: center;
     margin-inline: 0;
     height: 100%;
-    margin-bottom: 4rem;
   }
 
   .thumbnails {

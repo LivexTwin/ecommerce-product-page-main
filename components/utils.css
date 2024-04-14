@@ -30,6 +30,22 @@
     
   }   */
 
+/* attribution  */
+.attribution a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.attribution {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* attribution  */
+
 .container {
   max-width: 1000px;
   height: 100dvh;

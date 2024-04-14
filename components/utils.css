@@ -39,9 +39,9 @@
 
 .attribution {
   color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  font-size: var(--size-xs);
+  top: 0;
 }
 
 /* attribution  */

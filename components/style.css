@@ -59,10 +59,14 @@ html {
 
 body {
   /* font of your choice */
-
-  font-size: var(--size-base);
-
+  font-family: "Kumbh Sans", sans-serif;
   /* background-color: grey; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul,
@@ -80,6 +84,10 @@ svg {
   display: block;
   max-width: 100%;
   user-select: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 button {
